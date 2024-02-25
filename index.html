@@ -1,11 +1,108 @@
+<!-- WEEK 5
+
+Follow the tutorial below and get your first website online via Git Pages. 
+All you need to do for this week is get your CV site online and upload a text document with a link to your new website. 
+If you run into any issues with this lab, please post on the Teams channel for this week.
+
+Make sure to choose 'User or Organisation' site at the beginning of the steps; you may only have 1 user website per site and the web address will be:
+
+username.github.io, where username is your username (or organization name) on GitHub
+
+Tutorial: https://pages.github.com/
+
+-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <title>My GitHub Page</title>
+        <title>Joao Cordio's Resume</title>
+        <link rel="stylesheet" href="styles/style.css">
     </head>
-    <style>
-    </style>
-    <body>
-        <h1>Welcome to my GitHub Pages website!</h1>
-    </body>
+        <body>  
+            <!-- Introduction-->                
+            <h1 id="top">João Paulo (John) Cordio</h1>
+            <h3>| joao.cordio@gmail.com | +353 83 313 2234 | Cork City - Ireland |</h3>
+            <ul class="social">
+                <li>| <a href="https://www.linkedin.com/in/joaocordio/" target="_blank">LinkedIn</a> |</li>
+                <li><a href="https://github.com/jpcordio" target="_blank">GitHub</a> |</li>
+                <li><a href="https://www.instagram.com/joao.cordio/" target="_blank">Instagram</a> |</li>
+            </ul>
+            <hr />
+
+            <!-- Skills--> 
+            <h2 id="skills">Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>GIT</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ul>
+            <hr />
+            <!-- /Skills-->
+
+            <!-- Work Experience--> 
+            <h2 id="work-experience">Work Experience</h2>
+            <P>Senior Technical Support Specialist <br/> <span class="place-duration">at ClickDimensions (Nov 2019 - Present)</span></P>
+            <ul class="ul-square">
+                <li>Efficiently resolve support tickets to our customers' satisfaction by conducting in-depth support sessions though any available support channels at ClickDimensions;</li>
+                <li>Provide mentorship for TSS – Tier I support agents regarding support cases, technical knowledge and feedback;</li>
+                <li>Update documentation as needed to improve customer self-help and internal technical information;</li>
+                <li>Proactive monitoring of services to escalate accordingly to provide first level incident response documentation / organization;</li>
+                <li>First level escalation point for TSS - Tier I Support Agents;</li>
+                <li>Provide detail escalation analysis / reproduction / documentation for all issues routed to Tier III support.</li>
+            </ul>
+            <hr />
+            <!-- /Work Experience--> 
+            <!-- Education--> 
+            <h2 id="education">Education</h2>
+            <P>Higher Diploma in Science in Computing (<span class="bold underline">Web Development</span>) <br/> <span class="place-duration">at National College of Ireland (Jan 2024 - Present)</span></P>
+            
+            <hr />
+            <!-- /Education--> 
+            <!-- Contact--> 
+            <h2 id="contact">Contact</h2>
+            
+            <div class="container">
+                <div class="box text-left"> 
+                    <h3>GET IN TOUCH</h3>
+                    <div class="getInTouch">
+                        <ul>
+                            <li>Cork City - Ireland</li>                  
+                            <li>+353 83 313 2234</li>                      
+                            <li>joao.cordio@gmail.com</li>
+                            <li>www.cordio.com.br</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box"> 
+                    <h3>Send me a Message</h3>
+                    <form method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name"><br />
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email" placeholder="E-Mail"><br /><br />
+                        <label for="yourMessage">Your Message</label><br />
+                        <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                        <p><span class="warnings">*For now this is just an example, submit not available.</span></p>
+                    </form>
+                </div>
+                <div class="box"> 
+                    <h3>I am here</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78786.59486813084!2d-8.53308947675637!3d51.895984262699955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4844900891beb961%3A0xa00c7a99731c5d0!2sCork!5e0!3m2!1spt-BR!2sie!4v1584207210891!5m2!1spt-BR!2sie" width="300px" height="300px" frameborder="0" style="border:0; padding:0; margin:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+            <hr />
+            <!-- /Contact--> 
+            <ul class="footer-menu">
+                <li>| <a href="#top">Top</a> |</li>
+                <li><a href="#skills">Skills</a> |</li>
+                <li><a href="#work-experience">Work Experience</a> |</li>
+                <li><a href="#education">Education</a> |</li>
+                <li><a href="#contact">Education</a> |</li>
+            </ul>
+            
+            <h6>Copyright © 2024 <a href="https://www.cordio.com.br" target="_blank">Cordio.com.br</a></h6>
+        </body>
 </html>
