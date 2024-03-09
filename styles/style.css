@@ -116,10 +116,6 @@ h1, h2, h3, h4, h5, h6{
     background-color: #474D5D;
 }
 
-/*.row.text-white.text-center.d-block.d-md-none.mr-auto.ml-auto.mt-5 {
-    margin: auto;
-}
-*/
 .font-italic{
     font-style: italic !important;
 }
@@ -140,7 +136,7 @@ p.link a:HOVER{
     color: #ffffff;
 }
 
-.top-menu a{
+.top-menu a,{
     font-weight: bold;
     color: #ffffff;
 }
@@ -152,4 +148,16 @@ p.top-menu a:HOVER{
 ul.jobDescription p a{
     text-decoration: none;
     color: #143157;
+}
+
+.mainIndex a{
+    font-weight: bold;
+    color: #E21A51;
+    text-decoration: none;
+}
+
+.mainIndex a:HOVER{
+    font-weight: bold;
+    color: #ffffff;
+    
 }

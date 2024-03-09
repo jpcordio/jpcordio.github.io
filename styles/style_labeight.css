@@ -1,0 +1,48 @@
+body{
+	margin:0px;
+	padding:0px;
+	font-family:Helvetica;
+	color:white;
+	background:#143157;	
+	line-height:1.5;
+}
+
+p{
+	margin:0px;
+	padding:0px;
+}
+
+.text-cranberry{
+	color: #E21A51;
+}
+
+.h-30px {
+    height: 30px !important;
+}
+
+.bg-white{
+	background-color: ddd !important;
+}
+
+/* CUSTOM WIDTHS */
+.w-50, .w-xs-50 { width: 50%!important; }
+
+/* BREAKPOINTS */
+
+/* SM breakpoint */
+@media (min-width: 576px) {
+    /* CUSTOM WIDTHS */
+	.w-sm-50 { width: 50%!important; }
+}
+
+/* MD breakpoint*/
+@media (min-width: 768px) {
+    /* CUSTOM WIDTHS */
+	.w-md-100 { width: 100%!important; }
+}
+
+/* LG breakpoint */
+@media (min-width: 992px) {
+    /* CUSTOM WIDTHS */
+	.w-lg-100 { width: 100%!important; }
+}
