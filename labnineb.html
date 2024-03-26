@@ -1,0 +1,104 @@
+<!--
+
+    @author Joao Cordio
+
+    LAB 8
+
+	- Take the previously created Rock Paper Scissors application and allow the user to play 3 times.
+
+	Bonus: The game should stop if the user wins
+
+	Bonus: The computer should change their guess each time
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jankenpon - Lab 9</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/style_labeight.css"/>
+        <script src="script/labnineb.js"></script>        
+    </head>
+    <body>        
+        <div class="main">
+            <div id="gameTitle" class="">
+                <div class="container">                
+                    
+                    <!-- Row Title Line -->
+                    <div class="row">
+                        <div class="col mt-5 mb-5">
+                            <h1 class="text-center text-cranberry">Jankenpon - Lab 9</h1>
+                            <p class="text-center">You have <span id="chance">3</span> chances to win this game, otherwise the page will be destroyed!</p>
+                        </div>
+                    </div>
+
+                    <!-- START: Game for Regular Window -->
+                    <!-- Row Play Line -->
+                    <div class="row justify-content-around">
+                        <!-- Player Option -->
+                        <div class="col-12 col-md-4 mb-3">                                       
+                            <div class="text-center">                                                                
+                                <div class="card" style="width: 18rem;">                                    
+                                    <form action="#">
+                                        <label for="player">Choose yours:</label>
+                                        <select name="player" id="player" onchange="getPlayerOption(); setDefaultAlerts()">
+                                            <option value="0">Select</option>
+                                            <option value="1">Rock</option>
+                                            <option value="2">Paper</option>
+                                            <option value="3">Scissors</option>                                      
+                                        </select>
+                                        <input id="buttonPlay" type="submit" value="PLAY" onclick="play();return false;"/>
+                                        <input id="buttonPlayAgain" class="d-none" type="submit" value="Again?" onclick="playAgain()"/>
+                                    </form>    
+                                    <div lass="d-flex">
+                                        <div class="d-flex justify-content-center">
+                                            <img id="playerOption" class="card-img-top w-xs-50 w-sm-50 w-md-200 w-lg-100 w-xl-100" src="imgs/blue-question-mark.png" alt="Players">
+                                        </div>   
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Yours</p>
+                                    </div>
+
+                                </div>
+                            </div>                               
+                        </div>  
+                        
+                        <div class="col-12 col-md-4"> 
+                            <!-- Computer Option -->                                                                                                              
+                            <div class="card" style="width: 18rem;"> 
+                                <p class="text-center h-30px">Computer will choose automatically.<p>
+                                <div lass="d-flex">
+                                    <div class="d-flex justify-content-center">
+                                        <img id="computerOption" class="card-img-top w-xs-50 w-sm-50 w-md-200 w-lg-100 w-xl-100" src="imgs/red-question-mark.png" alt="Computer">
+                                    </div>
+                                </div>                               
+                                <div class="card-body">
+                                    <p class="card-text text-center">Computer's</p>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+
+                    <!-- Row Winner Line -->
+                    <div class="row justify-content-around text-center mt-5">
+                        <div class="col-12">                                
+                            <h3>Who will be the Winner?</h3> 
+                            <div id="alertWin" class="alert alert-primary d-none" role="alert">
+                                Congratulations! YOU WIN!
+                            </div>                               
+                            <div id="alertLose" class="alert alert-danger d-none" role="alert">
+                                Not this time, YOU LOSE!
+                            </div>                                
+                            <div id="alertDraw" class="alert alert-warning d-none" role="alert">
+                                It's a DRAW! Time for a rematch.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: Game for Regular Window -->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
